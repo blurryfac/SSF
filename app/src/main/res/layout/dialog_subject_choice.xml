@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_subject_choice_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_close_subject"/>
+        <TextView
+            android:id="@+id/tv_subject_choice_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:drawableStart="@mipmap/ic_subject_choice"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray1"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_subject_choice"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+</LinearLayout>

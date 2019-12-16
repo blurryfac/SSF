@@ -1,0 +1,2 @@
+include ':app', ':RxKit', ':RxUI'
+rootProject.name='SSF'

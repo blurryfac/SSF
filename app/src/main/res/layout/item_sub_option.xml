@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:gravity="center_vertical">
+    <RadioButton
+        android:id="@+id/cb_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:button="@drawable/cb_sub_selector"/>
+    <TextView
+        android:id="@+id/tv_option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff333333"
+        android:textSize="18sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_option_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/tv_option_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:text="the other the other the other the other the other the other the other the other "
+                android:textColor="#ff333333"
+                android:textSize="18sp"
+                />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

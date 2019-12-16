@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- 填充的颜色 -->
+    <solid android:color="#FFDFE2" />
+    <!-- 设置按钮的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <stroke android:color="#F79292"
+        android:width="@dimen/dp_1"/>
+    <!--边框的宽度及颜色-->
+    <size
+        android:width="@dimen/dp_40"
+        android:height="@dimen/dp_40" />
+</shape>

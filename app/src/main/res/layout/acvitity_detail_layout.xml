@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_bar_main"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_16"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:lineSpacingExtra="@dimen/dp_5"
+                tools:text="新手专享：1000元优惠券+抵扣红包~"
+                android:textColor="#ff333333"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2019-12-01 至 2020-01-31"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawableLeft="@mipmap/ic_active_time"
+                android:drawablePadding="@dimen/dp_5"
+                android:textColor="#ff9a9ea4"
+                android:textSize="14sp"
+                />
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/web"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程大减价"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:textColor="#ff333333"
+                android:textSize="18sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

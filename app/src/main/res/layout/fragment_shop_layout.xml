@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_bar_main"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:textSize="14sp"
+            android:hint="请输入关键词"
+            android:background="@drawable/btn_gray_shape"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="@dimen/dp_10"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dp_10" />
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/ic_shop_cart"/>
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl"
+        app:srlEnableLoadmore="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/stl_main"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:tl_indicator_color="@color/colorAccent"
+                app:tl_indicator_corner_radius="@dimen/dp_5"
+                app:tl_indicator_height="3dp"
+                app:tl_indicator_width="30dp"
+                app:tl_textSelectColor="@color/colorAccent"
+                app:tl_textUnselectColor="@color/black"
+                app:tl_textsize="15sp" />
+
+            <com.shanchuang.ssf.view.CustomViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

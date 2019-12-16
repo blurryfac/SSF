@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/app_bar_main"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_verify_post"/>
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_submit_verify_success"
+                android:lineSpacingExtra="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_30"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/tv_modify"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_44"
+                android:text="修改"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/btn_yellow_3_shape"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

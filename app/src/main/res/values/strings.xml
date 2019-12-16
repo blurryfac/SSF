@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">省师傅</string>
+    <string name="select_city">选择城市</string>
+    <string name="hot_city">热门城市</string>
+    <string name="located_city">定位城市</string>
+    <string name="locating">正在定位…</string>
+    <string name="located_failed">定位失败…</string>
+    <string name="login_mobile_empty">手机号为空</string>
+    <string name="login_pwd_empty">密码为空</string>
+    <string name="app_login_regsiter">注册</string>
+    <string name="order_time_reading">限时阅读</string>
+    <string name="login_code_empty">验证码为空</string>
+    <string name="main_et_search_hint">商品名称搜索</string>
+    <string name="main_tv_cancel">取消</string>
+    <string name="search_tv_empty">未找到您搜索的商品</string>
+
+    //首页
+
+    <string name="main_no_login">您还没有登录，是否要登录？</string>
+    <string name="main_tip">提示：</string>
+    <string name="cancer">取消</string>
+    <string name="confirm">确定</string>
+    <string name="jump_app_store">点击确定跳转到应用市场更新到最新版本！</string>
+    <string name="choice_browser">请选择浏览器</string>
+    <string name="permisson_denied">权限被拒绝，请在设置里面开启相应权限，若无相应权限会影响使用</string>
+    <string name="login_user">用户登录</string>
+    <string name="et_phone_hint">请输入手机号</string>
+    <string name="et_login_pwd">请输入密码</string>
+    <string name="regitster">注册</string>
+    <string name="et_login_confirm_pwd">请再次确认密码</string>
+    <string name="save_and_login">确认修改</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="tv_verify_true_name">真实姓名</string>
+    <string name="tv_verify_sex">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="tv_hint_true_name">请输入您的真实姓名</string>
+    <string name="tv_hint_mobile">请输入您的手机号</string>
+    <string name="tv_mobile">联系方式</string>
+    <string name="tv_now_address">现居住地</string>
+    <string name="tv_please_choice">请选择</string>
+    <string name="tv_email">邮箱</string>
+    <string name="tv_hint_email">请填写您的邮箱地址( 选填 )</string>
+    <string name="tv_id_num">身份证号</string>
+    <string name="tv_hint_id_num">请填写本人身份证号</string>
+    <string name="tv_emergency_contact">紧急联系人</string>
+    <string name="tv_hint_emergency_contact">请输入紧急联系人姓名</string>
+    <string name="tv_emergency_contact_mobile">紧急联系人电话</string>
+    <string name="tv_hint_emergency_contact_mobile">请输入紧急联系人电话</string>
+    <string name="tv_type_of_work">工种</string>
+    <string name="tv_must_choice">注：最多选择两个工种</string>
+    <string name="tv_gl">工龄</string>
+    <string name="tv_hj">户籍</string>
+    <string name="tv_hj_hint" >请填写您的户籍( 选填 )</string>
+    <string name="tv_id_zheng">身份证正面</string>
+    <string name="tv_id_fan">身份证反面</string>
+    <string name="tv_person_msg">请编辑您的个人简介</string>
+    <string name="tv_person_honour">个人荣誉</string>
+    <string name="tv_Immediate_submission">立即提交</string>
+    <string name="tv_tip">温馨提示</string>
+    <string name="tv_deposit_tip_text">1. 工程完成支付押金全额退还。
+        \n2. 为了您的个人权益和信息安全，请务必在省师傅平台下单交易。
+        \n3.可自由选择是否支付保证金，支付保证金可享受工单高提成比例，选择不支付直接点击取消支付保证。</string>
+    <string name="tv_y_tip_text">1. 工程完成支付押金全额退还。\n 2. 为了您的个人权益和信息安全，请务必在省师傅平台下单交易。</string>
+    <string name="tv_pay_ya">支付押金</string>
+    <string name="tv_pay_bzj">支付保证金</string>
+    <string name="tv_cancel_pay">取消支付</string>
+    <string name="tv_submit_verify_success">您的认证申请已经提交成功，审核结果将在1-3 个工作日通知到你，请耐心等待！</string>
+    <string name="tv_verify_success">审核通过</string>
+    <string name="tv_city">郑州</string>
+    <string name="tv_choice">切换</string>
+    <string name="tv_detail_address">详细地址</string>
+    <string name="tv_hint_address">请输入详细地址</string>
+    <string name="tv_deposit_gz_tip_text" >1. 工程完成支付押金全额退还。\n 2. 为了您的个人权益和信息安全，请务必在省师傅平台下单交易。</string>
+</resources>

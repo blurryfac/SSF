@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_16">
+    <com.shanchuang.ssf.view.ImageViewPlus
+        android:id="@+id/iv_logo"
+        android:layout_width="90dp"
+        android:scaleType="centerCrop"
+        android:layout_height="90dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_exercises_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初三语文试卷1"
+            android:textColor="#ff409ffb"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_exercises_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="试卷分数:120"
+            android:textColor="#ff666666"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_exercises_num"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="试卷题目数:60"
+            android:textColor="#ff666666"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_last_score"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:textColor="#ff666666"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

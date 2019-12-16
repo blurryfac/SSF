@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/app_bar_main" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_500"
+            android:background="@mipmap/ic_teacher_msg_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_toEndOf="@+id/iv_logo"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_teacher_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="艾莉丝"
+                        android:textColor="#ffffffff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_age"
+                        android:layout_width="31dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        tools:text="28岁"
+                        android:textColor="#ffbce2ff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_teacher_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    tools:text="学历：硕士"
+                    android:textColor="#ffbce2ff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    tools:text="任教：5年"
+                    android:textColor="#ffbce2ff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.shanchuang.ssf.view.ImageViewPlus
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/dp_81"
+                android:layout_height="@dimen/dp_81"
+                app:type="circle"
+                android:layout_centerVertical="true"
+                tools:src="@mipmap/ic_main_team" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_110"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:background="@drawable/btn_white_shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="教师简介"
+                android:gravity="center"
+                android:textColor="#ff2897f8"
+                android:textSize="18sp"
+                />
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/web_teacher"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

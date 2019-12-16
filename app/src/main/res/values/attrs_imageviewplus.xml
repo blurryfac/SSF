@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="type">
+        <enum name="none" value="0" />
+        <enum name="circle" value="1" />
+        <enum name="rounded_rect" value="2" />
+    </attr>
+    <attr name="borderColor" format="color" />
+    <attr name="borderWidth" format="dimension" />
+    <attr name="rectRoundRadius" format="dimension" />
+    <attr name="rectLeftTopRoundRadius" format="boolean"/>
+    <attr name="rectRightTopRoundRadius" format="boolean"/>
+    <attr name="rectLeftBottomRoundRadius" format="boolean"/>
+    <attr name="rectRightBottomRoundRadius" format="boolean"/>
+    <declare-styleable name="ImageViewPlus">
+        <attr name="type" />
+        <attr name="borderColor" />
+        <attr name="borderWidth" />
+        <attr name="radios" format="float" />
+        <attr name="rectRoundRadius" />
+        <attr name="rectLeftTopRoundRadius" />
+        <attr name="rectRightTopRoundRadius" />
+        <attr name="rectLeftBottomRoundRadius" />
+        <attr name="rectRightBottomRoundRadius" />
+    </declare-styleable>
+    <declare-styleable name="EnhanceTabLayout">
+        <attr name="tab_Mode" format="enum">
+            <enum name="mode_fixed" value="1" />
+            <enum name="mode_scrollable" value="2" />
+        </attr>
+        <attr name="tabInColor" format="color" />
+        <attr name="tabSelectTextColor" format="color" />
+        <attr name="tabTextColor" format="color" />
+        <attr name="tabIndicatorHeight" format="dimension" />
+        <attr name="tabIndicatorWidth" format="dimension" />
+        <attr name="tabTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

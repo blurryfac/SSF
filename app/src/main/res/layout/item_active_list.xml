@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    app:cardCornerRadius="@dimen/dp_10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white_10_shape"
+        android:orientation="vertical">
+        <com.shanchuang.ssf.view.ImageViewPlus
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            app:rectRightTopRoundRadius="true"
+            app:rectRightBottomRoundRadius="true"
+            app:rectRoundRadius="@dimen/dp_10"
+            app:type="rounded_rect"
+            tools:src="@color/red"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="新手专享：1000元优惠券+抵扣红包"
+            android:textColor="#ff333333"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:text="2019-12-01 至 2020-01-31"
+            android:textColor="#ff9a9ea4"
+            android:drawableLeft="@mipmap/ic_active_time"
+            android:drawablePadding="@dimen/dp_5"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

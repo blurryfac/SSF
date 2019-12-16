@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shanchuang.ssf.utils.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@color/white"
+   >
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_itemType="main">
+        <com.shanchuang.ssf.view.ImageViewPlus
+
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_logo"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="初三语文试卷1"
+                android:textColor="#ff409ffb"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_subject_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="试卷分数:120"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_subject_num"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                android:text="试卷题目数:60"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_subject_last_score"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                android:text="上次得分:60"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</com.shanchuang.ssf.utils.SwipeItemLayout>

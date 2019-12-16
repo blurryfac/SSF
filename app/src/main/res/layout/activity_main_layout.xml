@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F4"
+    android:clipChildren="false">
+
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_tab_bar"
+        android:orientation="vertical" />
+
+
+    <com.shanchuang.ssf.view.XRadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/btn_main"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_main_selector"
+            android:paddingTop="5dp"
+            android:text="首页"
+            android:textSize="12sp" />
+
+
+        <RadioButton
+            android:id="@+id/btn_video"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_shop_selector"
+
+            android:paddingTop="5dp"
+            android:text="消息通知"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/btn_shop"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_video_selector"
+            android:paddingTop="5dp"
+            android:text="我的订单"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/btn_me"
+            style="@style/tab_menu_item"
+
+            android:drawableTop="@drawable/tab_menu_me_selector"
+            android:paddingTop="5dp"
+            android:text="我的"
+            android:textSize="12sp" />
+    </com.shanchuang.ssf.view.XRadioGroup>
+
+
+</RelativeLayout>
